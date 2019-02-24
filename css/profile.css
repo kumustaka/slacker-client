@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+aside {
+    display: inline-block;
+    width: 35%;
+    height:70%;
+    float: left;
+}
+
+aside img {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50% , 20%);
+}
+
+main {
+    display: inline-block;
+    width: 64%;
+    float: left;
+}
+
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-right: 8rem;
+}
+
+h3 {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+p {
+    line-height: 2rem;
+    font-size: 1rem;
+}
+
+main > section {
+    border-top: 0.1rem #000000 solid;
+    padding-top: 2rem;
+}
+
+article {
+    line-height: 3rem;
+    font-size: 1rem;
+}
+
+span.label {
+    font-weight: 600;
+    min-width: 8rem;
+    display: inline-block;
+}
