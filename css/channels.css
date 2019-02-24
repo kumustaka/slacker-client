@@ -33,12 +33,33 @@ nav {
     height: 5rem;
     background-color: #1c1b43;
     float: left;
+    color: white;
 }
 
-#app-name {
-    color: 
+span#app-name {
+    font-size: 1.5rem;
+    line-height: 5rem;
+    float: left;
+    margin-left: 2rem;
 }
 
+nav section {
+    float: right;
+    display: inline-block;
+    line-height: 100%;
+}
+
+nav section span {
+    font-size: 1rem;
+    line-height: 5rem;
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+nav section span a {
+    color: white;
+    text-decoration: none;
+}
 
 main {
     display: inline-block;
@@ -51,7 +72,7 @@ main {
     width : 80%;		
     padding : 10px 10px;	
     height: 100%;
-    margin-top : 2.5rem;
+    margin-top : 0;
 }
 
 div {
