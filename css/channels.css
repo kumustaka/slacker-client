@@ -10,7 +10,7 @@ html, body {
 
 aside {
     display: inline-block;
-    width: 18%;
+    width: 20%;
     height:100%;
     float: left;
     background-color: #76768e;
@@ -63,7 +63,7 @@ nav section span a {
 
 main {
     display: inline-block;
-    width: 80%;
+    width: 78%;
     float: left;
 }
 
@@ -132,10 +132,11 @@ div {
 }	
 
 .message-box {
-    width : 80%;
+    width : 100%;
     font-size: 1em;
     margin : 1em, auto;
     height : 5em;
+
 }		
 
 .footer-block {
@@ -144,3 +145,4 @@ div {
     bottom : 2em;
     height: 5em;
 }
+

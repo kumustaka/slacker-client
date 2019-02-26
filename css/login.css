@@ -30,5 +30,70 @@ main {
     display: inline-block;
     width: 49%;
     float: left;
+    color:#471c9c;
 }
 
+h1 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1rem;
+    color: grey;
+    font-weight: 400;
+}
+
+
+
+@media (max-width: 768px) {
+
+    h2 {
+      font-size: 1.7em;
+    }
+  
+    h3 {
+      font-size: 1.03em;
+    }
+  
+    aside {
+      width: 100%;
+      margin-top: 2px;
+    }
+  
+    aside img {
+      width: 35%;
+      height :auto;
+    }
+  
+    header{
+      width: 100%;
+    }
+  
+    form {
+      display: block;
+    }
+  
+    form input {
+      width: 90%;
+      border-style: none;
+      background-color: white;
+      font-size: 1.5em;
+    }
+  
+    form input:focus {
+      border-style: solid;
+      border-color: #FFAE19;
+      outline-style:none;
+    }
+  
+    #userSubmit {
+      margin: 15px;
+    }
+  }
+  
