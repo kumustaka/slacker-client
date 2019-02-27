@@ -6,8 +6,8 @@ function createArticle( $message ) {
     let $message_author = $("<span>").addClass( "message-author").text( $message.user.name );
 
     let $dateMessage = new Date( Number.parseInt( $message.message.date ) );
-    let $dateTimeOnly = $dateMessage.toLocaleTimeString( );
-    let $dateDateOnly = $dateMessage.toLocaleDateString( );
+    let $dateTimeOnly = new Intl.DateTimeFormat("en-US").format($dateMessage);
+    let $dateDateOnly = new Intl.DateTimeFormat("en-US").format($dateMessage);
 
     let $timePieces = $dateTimeOnly.replace( / /gi , ":" ).split( ":"); 
     let $message_time = $("<span>").addClass( "message-time").text( $timePieces[ 0 ] + ":" + $timePieces[ 1 ] + " " +  $timePieces [ 3 ] + " " + $dateDateOnly);
