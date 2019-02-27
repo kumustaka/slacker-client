@@ -127,7 +127,7 @@ div {
     display: inline-block;
     vertical-align: top;				
     font-weight: bold;	
-    padding : 0.2em 3em 0.2em 0em;
+    margin-right: 1.5rem;
     width : 5rem;	
 }	
 
