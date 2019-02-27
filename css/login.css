@@ -36,6 +36,7 @@ main {
 h1 {
     font-size: 3rem;
     font-weight: 400;
+    margin: auto;
 }
 
 h2 {
@@ -53,47 +54,51 @@ h3 {
 
 @media (max-width: 768px) {
 
-    h2 {
-      font-size: 1.7em;
-    }
-  
-    h3 {
-      font-size: 1.03em;
-    }
-  
-    aside {
-      width: 100%;
-      margin-top: 2px;
-    }
-  
-    aside img {
-      width: 35%;
-      height :auto;
-    }
-  
-    header{
-      width: 100%;
-    }
-  
-    form {
-      display: block;
-    }
-  
-    form input {
-      width: 90%;
-      border-style: none;
-      background-color: white;
-      font-size: 1.5em;
-    }
-  
-    form input:focus {
-      border-style: solid;
-      border-color: #FFAE19;
-      outline-style:none;
-    }
-  
-    #userSubmit {
-      margin: 15px;
-    }
+  body > section {
+    margin-top: 1.5rem;
   }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  aside {
+    display:block;
+    width: 70%;
+  }
+
+  aside img {
+    width: 60%;
+    height: auto;
+  }
+
+  main {
+    display: block;
+    width: 70%;
+  }
+
+  form input {
+    width: 70%;
+    border-style: none;
+    background-color: white;
+    font-size: 1.5rem;
+  }
+
+  form input:focus {
+    border-style: solid;
+    border-color: #FFAE19;
+    outline-style:none;
+  }
+
+  #userSubmit {
+    margin: 1rem;
+    float: left;
+    width: 70%;
+  }
+
+}
   
