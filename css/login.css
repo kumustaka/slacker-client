@@ -18,12 +18,15 @@ aside {
     display: inline-block;
     width: 50%;
     float: left;
+    transform: translateY( -10% );
+    margin-left: 0.5rem;
 }
 
 aside img {
     width: 80%;
     height: auto;
     border-radius: 5%;
+    margin-left: 2rem;
 }
 
 main {
@@ -69,11 +72,13 @@ h3 {
   aside {
     display:block;
     width: 70%;
+    margin-left: 0;
   }
 
   aside img {
     width: 60%;
     height: auto;
+    margin-left: 0;
   }
 
   main {
