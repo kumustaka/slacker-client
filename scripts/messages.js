@@ -6,11 +6,20 @@ function createArticle( $message ) {
     let $message_author = $("<span>").addClass( "message-author").text( $message.user.name );
 
     let $dateMessage = new Date( Number.parseInt( $message.message.date ) );
-    let $dateTimeOnly = new Intl.DateTimeFormat("en-US").format($dateMessage);
-    let $dateDateOnly = new Intl.DateTimeFormat("en-US").format($dateMessage);
-
-    let $timePieces = $dateTimeOnly.replace( / /gi , ":" ).split( ":"); 
-    let $message_time = $("<span>").addClass( "message-time").text( $timePieces[ 0 ] + ":" + $timePieces[ 1 ] + " " +  $timePieces [ 3 ] + " " + $dateDateOnly);
+    let $dateDateOnly = new Intl.DateTimeFormat("en-us", {
+      year: 'numeric',
+      month: 'numeric',
+      day: 'numeric',
+      timeZone: "UTC"
+      }).format($dateMessage);
+  
+    let $dateTimeOnly = new Intl.DateTimeFormat("en-us", {      
+      hour: 'numeric',
+      minute: 'numeric',
+      hour12: true
+      }).format($dateMessage);
+    
+    let $message_time = $("<span>").addClass( "message-time").text($dateTimeOnly + " " + $dateDateOnly);
     console.log( "message-2" , $message );
     let $message_text = $("<span>").addClass( "message-text").text( $message.message.text );      
     let $message_meta_text = $("<div>").addClass( "message-meta-text");
