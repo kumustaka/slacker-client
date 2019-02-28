@@ -68,6 +68,7 @@ main {
 h1 {
     font-size: 3rem;
     color:#471c9c;
+    margin-bottom: 0;
 }
 
 h2 {
@@ -75,16 +76,18 @@ h2 {
     font-size: 1.5rem;
     margin-right: 8rem;
     color:#471c9c;
+    margin: 0rem 8rem 0rem 3rem;
 }
 
 h3 {
     display: inline-block;
     font-size: 1rem;
     color:#471c9c;
+    margin: 0 0 0 10rem;
 }
 
 h3 i{
-    margin-right: 1rem;
+    margin-right: 0.5rem;
 }
 
 p {
